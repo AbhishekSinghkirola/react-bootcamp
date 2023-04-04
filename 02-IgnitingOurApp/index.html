@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste React</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+    <!-- ----------------------------- Using HTML ------------------------------ -->
+    <!-- <div id="root">
+        <h1>Hello React!</h1>
+    </div> -->
+
+    <!-- -------------------------- Using Javascript --------------------------- -->
+    <!-- <div id="root">
+
+    </div>
+
+    <script>
+        const heading = document.createElement('h1');
+        heading.innerHTML = 'Hello Everyone By Javascript';
+
+        const root = document.getElementById('root');
+        root.appendChild(heading);
+    </script> -->
+
+    <!-- ----------------------------- Using React ----------------------------- -->
+    <div id="root">
+        Not Rendered
+    </div>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script>
+        // const heading = React.createElement("h1", {id: 'title'}, "Hello Everyone Using React");
+        // at the end of the day React.createElement gives us an object
+        // console.log(heading)
+        // const root = ReactDOM.createRoot(document.getElementById('root'));
+
+        // Passing the React Element inside root
+        // root.render(heading);
+
+
+        // Complex Structure
+        // const heading = React.createElement("h1", { id: 'title' }, "Hello Everyone Using React");
+        // const heading2 = React.createElement("h1", { id: 'title' }, "Heading 2");
+        // const container = React.createElement('div',{id: 'container'},[heading,heading2])
+        // console.log(container)
+
+        // const root = ReactDOM.createRoot(document.getElementById('root'));
+        // root.render(container);
+    </script>
+
+
+    <!-- ------------------------- Separate our script ------------------------- -->
+    <script src="App.js"></script>
+</body>
+
+</html>
